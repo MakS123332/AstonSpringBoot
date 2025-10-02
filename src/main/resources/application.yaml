@@ -32,10 +32,13 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring.json.trusted.packages: "*"
-springdoc:
-    api-docs:
-      path: /api-docs
-      swagger-ui:
-        path: /swagger-ui.html
-        tags-sorter: alpha
-        operations-sorter: alpha
+  logging:
+    level:
+      com.example.notification: DEBUG
+#springdoc:
+#    api-docs:
+#      path: /api-docs
+#      swagger-ui:
+#        path: /swagger-ui.html
+#        tags-sorter: alpha
+#        operations-sorter: alpha
